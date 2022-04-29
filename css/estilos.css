@@ -361,3 +361,12 @@ a>.cta .cta-title{
     font-size: 1.5rem;
     color: var(--color-primario);
 }
+.precio{
+    display: block;
+    color: var(--gris-oscuro);
+}
+.precio span{
+    color: var(--color-primario);
+    font-weight: 800;
+    font-size: 1.2em;
+}

@@ -214,7 +214,7 @@ nav{
 }
 .lists-cards .card{
     filter: brightness(0.9);
-    max-height: 444px;
+    max-height: 474px;
 }
 .lists-cards a:hover .card{
     filter: brightness(1);

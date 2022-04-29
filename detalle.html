@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/FavIcon.png">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Detalle | OH Foodie, Web App!</title>
+  </head>
+  <body>
+<header class="container py-3 mb-0 border-bottom">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+        <div class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <a href="index.html" class="navbar-brand">
+                <figure class="m-0">
+                    <img src="img/LogoOhFoodieHorizontal.svg" alt="">
+                </figure>
+            </a>
+            <div class="dropdown">
+                <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span class="icono"></span>  Baranquilla
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><h3><a class="dropdown-item" href="#">Abejorral</a></li>
+                  <li><h3><a class="dropdown-item" href="#">Barranquilla</a></li>
+                  <li><h3><a class="dropdown-item" href="#">Bogotá</a></li>
+                  <li><h3><a class="dropdown-item" href="#">Cartagena</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <ul class="nav col-12 col-md-auto my-3 my-md-0 justify-content-center mb-md-0">
+            <li><a href="restaurantes.html" class="nav-link h6 px-3 mb-0 link-dark"><span class="icono"><img src="img/icons/icon-restaurantes.svg" alt=""></span> Restaurantes</a></li>
+            <li><a href="listas.html" class="nav-link h6 px-3 mb-0 link-dark"><span class="icono"><img src="img/icons/icon-listas.svg" alt=""></span> Listas</a></li>
+            <li><a href="experiencias.html" class="nav-link h6 px-3 mb-0 link-dark"><span class="icono"><img src="img/icons/icon-exp.svg" alt=""></span> Experiencias</a></li>
+        </ul>
+    
+        <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Ingresa <i class="bi bi-arrow-right-short"></i></button>
+            <button type="button" class="btn btn-primary">Registrate</button>
+        </div>
+    </div>
+</header>
+<main>
+<section class=" jumbotron slider">
+    <div class="container-fluid px-0" >
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slide/restaurant-detalle1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide/restaurant-detalle2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide/restaurant-detalle3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide/restaurant-detalle4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</section><!-- Hero-->
+<!--///-->
+<section class="contenido py-5">
+    <div class="container">
+        <div class="container-fluid my-5 px-0">
+            <div class="row">
+                <div class="col-md-9 ">
+                    <div class="card  ">
+                        <div class="card-header">
+                          <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#descripcion">Descripcion</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#fotos">Fotos</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#menu">Menú</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#resena">Reseñas</a>
+                              </li>
+                          </ul>
+                        </div>
+                        <div class="card-body">
+                            <section id="descripcion">
+                                <div class="name mb-3 border-bottom">
+                                    <h1 class="h1 fw-bold">La Brasserie</h1>
+                                </div><!--/name-->
+                                <div class="rating">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                        <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                        <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                        <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                        <li class="list-inline-item"><i class="bi bi-star-half"></i></li>
+                                    </ul>
+                                </div><!--/rating-->
+                                <h5 class="card-title fw-bold d-block">4.2 Basado en calificaciones recientes </h5>
+                                <div class="reviews d-flex mt-2 mb-4">
+                                    <div class="label text-dark border py-1 px-3 me-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                        <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                    </div> <!--/foodie-->
+                                    <div class="label text-dark border py-1 px-3 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                        <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                    </div> <!--/foodie-pro-->
+                                </div><!--/review btns -->
+                                <div class="etiquetas">
+                                    <h5 class="card-title fw-bold d-inline-block">Etiquetas: </h5>
+                                    <ul class="list-inline d-inline-block ms-2">
+                                        <li class="list-inline-item"><button class="btn btn-sm btn-outline-secondary">Mediterránea</button></li>
+                                        <li class="list-inline-item"><button class="btn btn-sm btn-outline-secondary">Europea</button></li>
+                                        <li class="list-inline-item"><button class="btn btn-sm btn-outline-secondary">Comida Típica</button></li>
+                                    </ul>
+                                </div><!--/etiquetas-->
+                              <p class="card-text">El precio indicado en la carta es una referencia del valor promedio del restaurante consumiendo una entrada, un plato fuerte y un postre. Si bien es un restaurante típico, desde su fachada imponente que invita a los comensales a ingresar, encontrarás una ambientación que se sale de lo convencional. Un lugar que se convierte en un buen plan pues además de comer al mejor estilo peruano, te permitirá compartir una buena charla con tus amigos o tu pareja.</p>
+                            </section><!--/#descripcion-->
+                            <section id="fotos" class="mt-4">
+                                <div class="mb-3 border-bottom">
+                                    <h3 class="card-title fw-bold d-block">Fotos </h3>
+                                </div><!--/title-->
+                                <div class="grid-gallery">
+                                    <div class="container px-0">
+                                        <div class="row d-flex justify-content-start">
+                                            <div class="col-md-6">
+                                               <a href="#" data-bs-toggle="modal" data-bs-target="#gallery-1"> <img src="img/detalle-galeria-1.png" alt="Imagen Galería" class="img-fluid  w-100 rounded"></a>
+                                               <!-- Modal -->
+                                                <div class="modal fade" id="gallery-1" tabindex="-1" aria-labelledby="gallery-1" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                    <div class="modal-content border-0 bg-transparent">
+                                                        <figure class="figure">
+                                                            <img src="img/detalle-galeria-1.png" alt="Imagen del restaurante" class="img-fluid w-100">
+                                                            <figcaption class="figure-caption text-center text-white pt-3">Nombre del plato o preparación.</figcaption>
+                                                        </figure>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div><!--/col-->
+                                            <div class="col-md-6">
+                                                <div class="container-fluid px-0">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#gallery-2"> <img src="img/detalle-galeria-2.png" alt="Imagen Galería" class="img-fluid  w-100 rounded"></a>
+                                                            <!-- Modal -->
+                                                                <div class="modal fade" id="gallery-2" tabindex="-1" aria-labelledby="gallery-2" aria-hidden="true">
+                                                                    <div class="modal-dialog">
+                                                                    <div class="modal-content border-0 bg-transparent">
+                                                                        <figure class="figure">
+                                                                            <img src="img/detalle-galeria-2.png" alt="Imagen del restaurante" class="img-fluid w-100">
+                                                                            <figcaption class="figure-caption text-center text-white pt-3">Nombre del plato o preparación.</figcaption>
+                                                                        </figure>
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div><!--/col-->
+                                                        <div class="col-md-6">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#gallery-3"> <img src="img/detalle-galeria-3.png" alt="Imagen Galería" class="img-fluid  w-100 rounded"></a>
+                                                            <!-- Modal -->
+                                                                <div class="modal fade" id="gallery-3" tabindex="-1" aria-labelledby="gallery-3" aria-hidden="true">
+                                                                    <div class="modal-dialog">
+                                                                    <div class="modal-content border-0 bg-transparent">
+                                                                        <figure class="figure">
+                                                                            <img src="img/detalle-galeria-3.png" alt="Imagen del restaurante" class="img-fluid w-100">
+                                                                            <figcaption class="figure-caption text-center text-white pt-3">Nombre del plato o preparación.</figcaption>
+                                                                        </figure>
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div><!--/col-->
+                                                    </div><!--/row-->
+                                                    <div class="row mt-4">        
+                                                        <div class="col-md-6">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#gallery-4"> <img src="img/detalle-galeria-4.png" alt="Imagen Galería" class="img-fluid  w-100 rounded"></a>
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="gallery-4" tabindex="-1" aria-labelledby="gallery-4" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                <div class="modal-content border-0 bg-transparent">
+                                                                    <figure class="figure">
+                                                                        <img src="img/detalle-galeria-4.png" alt="Imagen del restaurante" class="img-fluid w-100">
+                                                                        <figcaption class="figure-caption text-center text-white pt-3">Nombre del plato o preparación.</figcaption>
+                                                                    </figure>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--/col-->
+                                                        <div class="col-md-6">
+                                                            <a href="#" data-bs-toggle="modal" data-bs-target="#gallery-5"> <img src="img/detalle-galeria-5.png" alt="Imagen Galería" class="img-fluid  w-100 rounded"></a>
+                                                            <!-- Modal -->
+                                                            <div class="modal fade" id="gallery-5" tabindex="-1" aria-labelledby="gallery-5" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                <div class="modal-content border-0 bg-transparent">
+                                                                    <figure class="figure">
+                                                                        <img src="img/detalle-galeria-5.png" alt="Imagen del restaurante" class="img-fluid w-100">
+                                                                        <figcaption class="figure-caption text-center text-white pt-3">Nombre del plato o preparación.</figcaption>
+                                                                    </figure>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--/col-->
+                                                    </div><!--/row-->
+                                                </div><!--Container fluid -->
+                                            </div><!--/col-->
+                                        </div><!--/fila-->
+                                    </div><!--/contenedor-->
+                                </div><!--/Grid-gallery -->
+                            </section><!--/#fotos-->
+                            <section id="menu" class="mt-4">
+                                <div class="mb-3 border-bottom">
+                                    <h3 class="card-title fw-bold d-block">Menú </h3>
+                                </div><!--/title-->
+                                <div class="navegacion mb-4">
+                                    <a href="#" class="btn btn-outline-secondary  disabled">Menú Principal</a>
+                                    <a href="menuFULL.html" class="btn btn-primary">Menú Completo</a>
+                                </div><!--/Nav-->
+                                <div class="card fw-100"  >
+                                    <div class="card-body">
+                                        <div class="container-fluid px-0">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-8">
+                                                    <h5 class="card-title fw-bold">New York Steak</h5>
+                                                    <p class="card-text">El New York steak, también conocido como strip loin, Kansas City steak, striploin o shell, es un corte ligeramente magro sin hueso que puede prepararse tanto a la parrilla como en horno. </p>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h4 class="h4 fw-bold text-center">$15.000 COP</h4>
+                                                </div>
+                                            </div><!--/Flex-->
+                                        </div><!--/container-->
+                                    </div><!--/card-body-->
+                                </div><!--/card-->
+                                <div class="card fw-100"  >
+                                    <div class="card-body">
+                                        <div class="container-fluid px-0">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-8">
+                                                    <h5 class="card-title fw-bold">Crême brûlée</h5>
+                                                    <p class="card-text">Es postre que consiste en una crema cuya superficie se ha espolvoreado de azúcar con el fin de quemarlo y obtener así una fina capa crujiente de caramelo.  </p>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h4 class="h4 fw-bold text-center">$18.000 COP</h4>
+                                                </div>
+                                            </div><!--/Flex-->
+                                        </div><!--/container-->
+                                    </div><!--/card-body-->
+                                </div><!--/card-->
+                            </section><!--/#Menu-->
+                            <section id="resena" class="mt-4">
+                                <div class="mb-3 border-bottom">
+                                    <h3 class="card-title fw-bold d-block">Reseñas </h3>
+                                </div><!--/title-->
+                                <div class="contenido-reviews container-fluid px-0">
+                                    <div class="row g-4 align-middle">
+                                        <div class="col-12 d-flex align-items-start  py-4">
+                                            <img src="img/face-male2.jpg" width="80" alt="" class="align-middle my-auto img-fluid rounded-circle">
+                                            <div class="mx-2 px-2">
+                                                <ul class="list-inline fs-5 color-principal mb-0">
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="list-inline-item text-dark">| Abril 16, 2022</li>
+                                                </ul>
+                                                <p class="card-text">Tiempo increíble y comida increíble. Breakers es una experiencia agradable. Me encanta la decoración, es muy cómoda. Se ve moderno por dentro y el personal es muy servicial. </p>
+                                            </div>
+                                        </div> <!--/col-->
+                                        <hr class="mx-auto my-3" style="width:80%">
+                                        <div class="col-12 d-flex align-items-start  py-4">
+                                            <img src="img/face-male1.jpg" width="80" alt="" class="align-middle my-auto img-fluid rounded-circle">
+                                            <div class="mx-2 px-2">
+                                                <ul class="list-inline fs-5 color-principal mb-0">
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="list-inline-item"><i class="bi bi-star-half"></i></li>
+                                                    <li class="list-inline-item text-dark">| Abril 19, 2022</li>
+                                                </ul>
+                                                <p class="card-text">Buena atmósfera. Sin embargo, el restaurante parecía tener poco personal por el servicio lento. La calidad general de la comida, las bebidas eran buenas. Recomendado 100% </p>
+                                            </div>
+                                        </div> <!--/col-->
+                                    </div>
+                                </div><!--/contenido reviews --> 
+                            </section><!--/#reseñas-->
+                        </div>
+                      </div>
+                </div><!--/resultado listado-->
+                <!-- /// -->
+                <aside class="col-md-3 sidebar">
+                    <div class="reviews d-flex gap-1 justify-content-between mt-0 mb-3">
+                        <div class=" flex-fill  btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                            <i class="bi bi-chat-square-heart"></i> Favoritos 
+                        </div> <!--/foodie-->
+                        <div class=" flex-fill  btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                            <i class="bi bi-calendar-plus"></i>  Planner 
+                        </div> <!--/foodie-pro-->
+                    </div><!--/reviews -->
+                    <div class="reservation-engine">
+                        <div class="card">
+                            <div class="card-header fw-bold text-center">
+                              Haver una reserva
+                            </div>
+                            <div class="card-body">
+                              <form action="">
+                                <label for="floatingInputValue" class="fw-bold">Numero de personas</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option >1 Persona</option>
+                                    <option selected value="1">2 Personas</option>
+                                    <option value="2">3 Personas</option>
+                                    <option value="3">4 Personas</option>
+                                </select>
+                                <div class="my-2"></div>
+                                <label for="floatingInputValue" class="fw-bold">Fecha</label>
+                                <input type="date" class="form-control" id="start" name="trip-start" value="2022-04-28"  min="2022-04-01" max="2022-12-31">
+                                <button type="submit" class="btn btn-primary w-100 my-3">Encontrar una mesa</button>
+                              </form>
+                            </div>
+                        </div><!--/card-->
+                    </div><!--/motor reserva -->
+                    <div>
+                        <!-- iframe Google Maps-->
+                        <iframe src="https://www.google.com/maps/d/embed?mid=13K84x0CL-Ffv115IIRxyzeY8BXI&ehbc=2E312F" width="100%" height="480" class="border rounded"></iframe>
+                    </div><!-- /Google Maps -->
+                    <div class="sticky-top">
+                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/p7CgpP3UN_c?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div><!--/video -->
+                </aside>
+            </div><!--/row-->
+        </div><!--/contenedor-->
+    </div><!--/container-->
+
+</section><!--/contenido-->
+</main>
+<footer>
+    <div class="quick-links py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <figure>
+                        <img src="img/LogoOhFoodieVertical.svg" alt="">
+                    </figure>
+                </div><!--/col-->
+                <div class="col-md-3">
+                    <h3 class="h3 fw-bold text-white">Servicios</h3>
+                    <a href="restaurantes.html   " class="d-block my-4">Restaurantes</a>
+                    <a href="listas.html" class="d-block my-4">Listas</a>
+                    <a href="experiencias.html" class="d-block my-4">Experiencias</a>
+                </div><!--/col-->
+                <div class="col-md-3">
+                    <h3 class="h3 fw-bold text-white">Ofertas</h3>
+                    <a href="#" class="d-block my-4">Promociones</a>
+                    <a href="#" class="d-block my-4">Recomendaciones</a>
+                    <a href="#" class="d-block my-4">Acerca de</a>
+                </div><!--/col-->
+                <div class="col-md-3">
+                    <h3 class="h3 fw-bold text-white">Legal</h3>
+                    <a href="#" class="d-block my-4">Terminos y condiciones</a>
+                    <a href="#" class="d-block my-4">Politica de Privacidad</a>
+                    <div class="download-app">
+                        <p class="muted">Descarga Nuestra App</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#"><img src="img/btn-appStore.png" alt="Descargar desde el App Store"></a></li>
+                            <li class="list-inline-item"><a href="#"><img src="img/btn-googlePlay.png" alt="Descargar desde Google Play Store"></a></li>
+                        </ul>
+                    </div><!--/download-app-->
+                </div><!--/col-->
+            </div><!--/row-->
+        </div><!--/container-->
+    </div><!--/links-->
+    <div class="copy py-4 fw-bolder bg-dark">
+        <div class="container text-center fs-6">
+            <a href="mailto:contactus@ohfoodie.com" class="text-white">contactus@ohfoodie.com</a> | Carrera 53 # 70-72, Oficina 4. Barranquilla, Colombia
+        </div><!--/container-->
+    </div><!--/copy-->
+</footer>
+    <!--  JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

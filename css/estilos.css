@@ -1,0 +1,362 @@
+
+/*-------------------------------------------*\ 
+   Indice
+   - Colores
+   - Fuentes y Tipografia
+   - Botones
+   - Estilos General
+   - Navegacion 
+   - Cards
+   - Carousel
+   - Jumbotron
+   - Layout - RWD
+\*-------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+/*-------------------------------------------*\
+    Colores
+\*-------------------------------------------*/
+:root {
+    --color-primario:#FF003C;
+    --color-secundario:#247F9E;
+    --gris-oscuro: #333;
+    --gris-claro: #666;
+}
+/*-------------------------------------------*\
+    Fonts
+\*-------------------------------------------*/
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+h1{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: auto;
+}
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+h3{
+    font-size: 19px;
+}
+p{
+    font-size: 15px;
+    font-weight: medium;
+}
+/*-------------------------------------------*\
+    botones
+\*-------------------------------------------*/
+.btn-primary {
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+.btn-primary:hover {
+    color: whitesmoke;
+    background: #BB0E37;
+    border-color: var(--color-primario);
+}
+.btn-outline-primary {
+    color: var(--color-primario);
+    border-color:var(--color-primario);
+}
+.btn-outline-primary:hover {
+    color: whitesmoke;
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+.btn-outline-primary:hover svg{
+    fill: white;
+}
+a.link{
+    color:var(--color-primario);
+    text-decoration: none;
+}
+a.link:hover{
+    text-decoration: underline;
+}
+/*-------------------------------------------*\
+    Estilos Generales
+\*-------------------------------------------*/
+.heading{
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    color:var(--gris-claro);
+}
+.heading span{
+    color: #111;
+}
+footer{
+    background-color:var(--gris-oscuro);
+    color: var(--gris-claro);
+}
+footer .quick-links a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #C0BDC8;
+    line-height: 2ex;
+    font-weight: 700;
+}
+footer .quick-links a:hover{
+    color: whitesmoke;
+}
+/*-------------------------------------------*\
+    Navegacion
+\*-------------------------------------------*/
+nav{
+    display: inherit;
+}
+.nav-link{
+    font-weight: bold;
+    color: #444;
+    font-size:18px ;
+}
+.nav-link:hover{
+    color: var(--color-primario);
+}
+.active .nav-link{
+    color:var(--color-primario);
+}
+.nav-link .icono{
+    filter: grayscale(1);
+}
+.nav-link:hover .icono, .nav-link:focus .icono, .active>.nav-link .icono{
+    filter: grayscale(0);
+}
+.dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item:hover {
+    color: whitesmoke;
+    background-color: var(--color-secundario);
+}
+
+/*-------------------------------------------*\
+    Cards
+\*-------------------------------------------*/
+
+
+.card{
+    margin-bottom: .9rem;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Just in case */
+}
+.card-header{
+    background-color: transparent;
+}
+.card-tooltip{
+    margin: 8px auto;
+}
+.card-tooltip .ubicacion{
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: initial;
+    line-height: 1rem;
+}
+.card-tooltip .precios{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+.card-tooltip .precios span{color: #666;}
+.card-tooltip .horario {
+    margin: 8px auto;
+    font-weight: bold;
+    color: var(--gris-oscuro);
+}
+.lists-cards .card.bg-dark:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+    background-color: #11111185;
+    height: auto;
+    z-index: 2;
+}
+.lists-cards .card-img-overlay {
+    padding: 45px;
+    text-align: start;
+    align-items: center;
+    z-index: 3;
+}
+.lists-cards .card-img-overlay h3{
+    font-size: 24px;    
+    font-weight: bold;
+}
+.lists-cards a{
+    position: relative;
+    top: 0;
+}
+.lists-cards a:hover{
+    top: -2px;
+}
+.lists-cards .card{
+    filter: brightness(0.9);
+}
+.lists-cards a:hover .card{
+    filter: brightness(1);
+}
+.exp-cards{
+    display: inherit;
+}
+.exp-cards img.card-img-top{
+    margin-bottom: -50px;
+}
+.exp-cards .card-body{
+    background-color: #fff;
+}
+.card.cta{
+    padding: 10px 12px;
+    border: 2px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 55.5px;
+}
+.cta .cta-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+}
+a>.cta .cta-title{
+    color: #000;
+    text-decoration: none;
+}
+.card-listado{
+    display: block;
+    margin-bottom: 1.3rem;
+}
+.card-listado .card-body{
+    padding: .5rem 1rem;
+}
+.card-listado .card-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #222222;
+}
+.card-listado .card-subtitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+}
+.card-listado .card.w-100{
+    max-height: max-content;
+}
+/*-------------------------------------------*\
+    Carousel
+\*-------------------------------------------*/
+.carousel-control-next {
+    right: .5px;
+}
+.carousel-control-prev {
+    left: .5px;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: initial;
+}
+.carousel-control-prev .icono,.carousel-control-next .icono {
+    width: 32px;
+    height: 32px;
+}
+/*-------------------------------------------*\
+    Banners - Jumbotron
+\*-------------------------------------------*/
+.jumbotron{
+    background-blend-mode: darken;
+    background-position: center!important;
+    background-size: cover!important;
+}
+.bg-hero{
+    background: url(../img/bg-hero-home.png) #00000040 no-repeat;
+}
+.bg-restaurantes{
+    background: url(../img/bg-restaurantes.png) #00000040 no-repeat;
+}
+.bg-listas{
+    background: url(../img/bg-listas.png) #00000040 no-repeat;
+}
+.bg-experiencias{
+    background: url(../img/bg-experiencias.png) #00000040 no-repeat;
+}
+.bg-listado{
+    background: url(../img/bg-listado.png) #00000040 no-repeat;
+}
+.jumbotron.slider{
+    padding: 0;
+    margin: 0;
+}
+.jumbotron.slider .carousel-inner{
+    max-height: 400px;
+}
+
+/*-------------------------------------------*\
+    Layout - Responsive Web Design
+\*-------------------------------------------*/
+.color-principal{
+    color: var(--color-primario);
+}
+.color-secundario{
+    color: var(--color-secundario);
+}
+
+.bg-gray-linear{
+    background:linear-gradient(180deg, #FFFFFF 0%, #ddd 100%);
+}
+.banner_promotion {
+    background-image: url(../img/bg-promoDEMO.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.reviews {display:flex;}
+.reviews .label{
+    display: inherit;
+    text-align: center;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.reviews .label>.badge{
+    display: inline-block;
+    border-radius: 50px;
+    margin-right: 0.8em;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    line-height: 2em;
+    font-size: x-small;
+}
+.badge.foodie{
+    background-color: gainsboro;
+}
+.badge.foodie-pro{
+    background-color: black;
+}
+.rating{
+    display: block;
+}
+.rating .list-inline-item > i {
+    font-size: 1.5rem;
+    color: var(--color-primario);
+}

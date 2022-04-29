@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/FavIcon.png">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Restaurantes | OH Foodie, Web App!</title>
+  </head>
+  <body>
+<header class="container py-3 mb-0 border-bottom">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+        <div class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <a href="index.html" class="navbar-brand">
+                <figure class="m-0">
+                    <img src="img/LogoOhFoodieHorizontal.svg" alt="">
+                </figure>
+            </a>
+            <div class="dropdown">
+                <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span class="icono"></span>  Baranquilla
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><h3><a class="dropdown-item" href="#">Abejorral</a></li>
+                  <li><h3><a class="dropdown-item" href="#">Barranquilla</a></li>
+                  <li><h3><a class="dropdown-item" href="#">Bogotá</a></li>
+                  <li><h3><a class="dropdown-item" href="#">Cartagena</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <ul class="nav col-12 col-md-auto my-3 my-md-0 justify-content-center mb-md-0">
+            <li class="active"><a href="#" class="nav-link h6 px-3 mb-0 link-dark"><span class="icono"><img src="img/icons/icon-restaurantes.svg" alt=""></span> Restaurantes</a></li>
+            <li><a href="listas.html" class="nav-link h6 px-3 mb-0 link-dark"><span class="icono"><img src="img/icons/icon-listas.svg" alt=""></span> Listas</a></li>
+            <li><a href="experiencias.html" class="nav-link h6 px-3 mb-0 link-dark"><span class="icono"><img src="img/icons/icon-exp.svg" alt=""></span> Experiencias</a></li>
+        </ul>
+    
+        <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Ingresa <i class="bi bi-arrow-right-short"></i></button>
+            <button type="button" class="btn btn-primary">Registrate</button>
+        </div>
+    </div>
+</header>
+<main>
+<section class="text-center jumbotron bg-restaurantes">
+    <div class="container py-5">
+        <div class="row py-lg-5">
+            <div class="col-md-10 mx-auto">
+                <h1 class="fw-bold text-white">Encuentra tu mesa para cualquier ocasión</h1>
+                <div>
+                    <div class="input-group input-group-lg">
+                        <input type="search" class="form-control rounded ms-auto me-1" placeholder="Busca tu restaurante, plato o comida favorita" aria-label="Search" aria-describedby="search-addon"style="max-width:640px;" />
+                        <button type="button" class="btn btn-primary rounded ms-1 me-auto"> Buscar </button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</section><!-- Hero-->
+<!--///-->
+<section class="bg-gray-linear py-5">
+    <div class="container">
+        <div class="heading d-flex justify-content-between border-bottom">
+            <h3 class="fw-bold">Restaurantes populares en <span>Barranquilla</span></h3>
+            <a href="#" class="link fw-bold">Ver todos</a>
+        </div>
+        <div class="product-cards mt-5 mb-2 px-0 container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">La Brasserie</h2>
+                            <p class="card-subtitle">Mediterránea</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/brisket-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">Brisket casa de asados</h2>
+                            <p class="card-subtitle">Steakhouse</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Calle 75 #60 - 57</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/turcos-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">Turcos Cocina Arabe</h2>
+                            <p class="card-subtitle">Arabe</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Calle 84 #55 - 54 Local 3</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/piazzetta-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">La Piazzetta</h2>
+                            <p class="card-subtitle">Italiana</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 64b # 84 -131</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$$$<span></span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col-->
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">La Brasserie</h2>
+                            <p class="card-subtitle">Mediterránea</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/brisket-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">Brisket casa de asados</h2>
+                            <p class="card-subtitle">Steakhouse</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Calle 75 #60 - 57</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/turcos-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">Turcos Cocina Arabe</h2>
+                            <p class="card-subtitle">Arabe</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Calle 84 #55 - 54 Local 3</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/piazzetta-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">La Piazzetta</h2>
+                            <p class="card-subtitle">Italiana</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 64b # 84 -131</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$$$<span></span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+            </div><!--/row-->
+        </div><!--/products-cards-container -->
+    </div><!--/container-->
+</section><!--/restaurants-->
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="heading d-flex justify-content-between border-bottom">
+            <h3 class="fw-bold">Comida Italiana</h3>
+            <a href="#" class="link fw-bold">Ver todos</a>
+        </div>
+        <div class="product-cards mt-5 mb-2 px-0 container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">La Brasserie</h2>
+                            <p class="card-subtitle">Mediterránea</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/brisket-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">Brisket casa de asados</h2>
+                            <p class="card-subtitle">Steakhouse</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Calle 75 #60 - 57</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/turcos-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">Turcos Cocina Arabe</h2>
+                            <p class="card-subtitle">Arabe</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Calle 84 #55 - 54 Local 3</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/piazzetta-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">La Piazzetta</h2>
+                            <p class="card-subtitle">Italiana</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 64b # 84 -131</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$$$<span></span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar </a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col-->
+            </div><!--/row-->
+            <div class="heading d-flex justify-content-between border-bottom mt-5">
+                <h3 class="fw-bold">Comida de Mar</h3>
+                <a href="#" class="link fw-bold">Ver todos</a>
+            </div>
+            <div class="product-cards mt-5 mb-2 px-0 container-fluid">
+                <div class="row">
+                    <div id="carouselMariscos" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+                        
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3">
+                                  <div class="card">
+                                      <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                                      <div class="card-body">
+                                          <h2 class="card-title">La Brasserie</h2>
+                                          <p class="card-subtitle">Mediterránea</p>
+                                          <div class="reviews d-flex my-2">
+                                              <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                                  <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                              </div> <!--/foodie-->
+                                              <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                                  <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                              </div> <!--/foodie-pro-->
+                                          </div><!--/Reviews-->
+                                          <div class="card-tooltip">
+                                              <div class="info d-flex align-items-baseline justify-content-between">
+                                                  <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                                  <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                              </div><!--/info-->
+                                              <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                                          </div><!--/info-->
+                                              <a href="#" class="btn btn-primary">Reservar </a>
+                                      </div><!--/card-body-->
+                                  </div><!--/Product Card -->
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                  <div class="card">
+                                      <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                                      <div class="card-body">
+                                          <h2 class="card-title">La Brasserie</h2>
+                                          <p class="card-subtitle">Mediterránea</p>
+                                          <div class="reviews d-flex my-2">
+                                              <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                                  <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                              </div> <!--/foodie-->
+                                              <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                                  <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                              </div> <!--/foodie-pro-->
+                                          </div><!--/Reviews-->
+                                          <div class="card-tooltip">
+                                              <div class="info d-flex align-items-baseline justify-content-between">
+                                                  <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                                  <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                              </div><!--/info-->
+                                              <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                                          </div><!--/info-->
+                                              <a href="#" class="btn btn-primary">Reservar </a>
+                                      </div><!--/card-body-->
+                                  </div><!--/Product Card -->
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                  <div class="card">
+                                      <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                                      <div class="card-body">
+                                          <h2 class="card-title">La Brasserie</h2>
+                                          <p class="card-subtitle">Mediterránea</p>
+                                          <div class="reviews d-flex my-2">
+                                              <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                                  <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                              </div> <!--/foodie-->
+                                              <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                                  <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                              </div> <!--/foodie-pro-->
+                                          </div><!--/Reviews-->
+                                          <div class="card-tooltip">
+                                              <div class="info d-flex align-items-baseline justify-content-between">
+                                                  <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                                  <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                              </div><!--/info-->
+                                              <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                                          </div><!--/info-->
+                                              <a href="#" class="btn btn-primary">Reservar </a>
+                                      </div><!--/card-body-->
+                                  </div><!--/Product Card -->
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                  <div class="card">
+                                      <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                                      <div class="card-body">
+                                          <h2 class="card-title">La Brasserie</h2>
+                                          <p class="card-subtitle">Mediterránea</p>
+                                          <div class="reviews d-flex my-2">
+                                              <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                                  <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                              </div> <!--/foodie-->
+                                              <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                                  <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                              </div> <!--/foodie-pro-->
+                                          </div><!--/Reviews-->
+                                          <div class="card-tooltip">
+                                              <div class="info d-flex align-items-baseline justify-content-between">
+                                                  <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                                  <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                              </div><!--/info-->
+                                              <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                                          </div><!--/info-->
+                                              <a href="#" class="btn btn-primary">Reservar </a>
+                                      </div><!--/card-body-->
+                                  </div><!--/Product Card -->
+                                </div>
+                            </div>                         
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-3">
+                                <div class="card">
+                                    <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                                    <div class="card-body">
+                                        <h2 class="card-title">La Brasserie</h2>
+                                        <p class="card-subtitle">Mediterránea</p>
+                                        <div class="reviews d-flex my-2">
+                                            <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                                <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                            </div> <!--/foodie-->
+                                            <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                                <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                            </div> <!--/foodie-pro-->
+                                        </div><!--/Reviews-->
+                                        <div class="card-tooltip">
+                                            <div class="info d-flex align-items-baseline justify-content-between">
+                                                <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                                <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                            </div><!--/info-->
+                                            <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                                        </div><!--/info-->
+                                            <a href="#" class="btn btn-primary">Reservar </a>
+                                    </div><!--/card-body-->
+                                </div><!--/Product Card -->
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                <div class="card">
+                                    <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                                    <div class="card-body">
+                                        <h2 class="card-title">La Brasserie</h2>
+                                        <p class="card-subtitle">Mediterránea</p>
+                                        <div class="reviews d-flex my-2">
+                                            <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                                <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                            </div> <!--/foodie-->
+                                            <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                                <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                            </div> <!--/foodie-pro-->
+                                        </div><!--/Reviews-->
+                                        <div class="card-tooltip">
+                                            <div class="info d-flex align-items-baseline justify-content-between">
+                                                <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                                <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                            </div><!--/info-->
+                                            <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                                        </div><!--/info-->
+                                            <a href="#" class="btn btn-primary">Reservar </a>
+                                    </div><!--/card-body-->
+                                </div><!--/Product Card -->
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                <div class="card">
+                                    <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                                    <div class="card-body">
+                                        <h2 class="card-title">La Brasserie</h2>
+                                        <p class="card-subtitle">Mediterránea</p>
+                                        <div class="reviews d-flex my-2">
+                                            <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                                <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                            </div> <!--/foodie-->
+                                            <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                                <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                            </div> <!--/foodie-pro-->
+                                        </div><!--/Reviews-->
+                                        <div class="card-tooltip">
+                                            <div class="info d-flex align-items-baseline justify-content-between">
+                                                <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                                <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                            </div><!--/info-->
+                                            <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                                        </div><!--/info-->
+                                            <a href="#" class="btn btn-primary">Reservar </a>
+                                    </div><!--/card-body-->
+                                </div><!--/Product Card -->
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                <div class="card">
+                                    <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                                    <div class="card-body">
+                                        <h2 class="card-title">La Brasserie</h2>
+                                        <p class="card-subtitle">Mediterránea</p>
+                                        <div class="reviews d-flex my-2">
+                                            <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                                <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                            </div> <!--/foodie-->
+                                            <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                                <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                            </div> <!--/foodie-pro-->
+                                        </div><!--/Reviews-->
+                                        <div class="card-tooltip">
+                                            <div class="info d-flex align-items-baseline justify-content-between">
+                                                <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                                <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                            </div><!--/info-->
+                                            <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                                        </div><!--/info-->
+                                            <a href="#" class="btn btn-primary">Reservar </a>
+                                    </div><!--/card-body-->
+                                </div><!--/Product Card -->
+                                </div>
+                            </div>
+                        
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMariscos" data-bs-slide="prev">
+                          <img class="icono" src="img/icons/arrow-left-circle.svg" alt="Anterior">
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMariscos" data-bs-slide="next">
+                          <img class="icono" src="img/icons/arrow-right-circle.svg" alt="Siguiente">
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                      </div>
+                </div><!--/row-->
+                <div class="row align-items-center justify-content-center text-center mt-4 py-3">
+                    <div class="col">
+                        <a href="#" class="btn btn-primary btn-lg"> Cargar Más </a>
+                    </div>
+                </div>
+        </div><!--/products-cards-container -->
+    </div><!--/container-->
+</section><!--/restaurants-->
+<!--///-->
+</main>
+<footer>
+    <div class="quick-links py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <figure>
+                        <img src="img/LogoOhFoodieVertical.svg" alt="">
+                    </figure>
+                </div><!--/col-->
+                <div class="col-md-3">
+                    <h3 class="h3 fw-bold text-white">Servicios</h3>
+                    <a href="#" class="d-block my-4">Restaurantes</a>
+                    <a href="listas.html" class="d-block my-4">Listas</a>
+                    <a href="experiencias.html" class="d-block my-4">Experiencias</a>
+                </div><!--/col-->
+                <div class="col-md-3">
+                    <h3 class="h3 fw-bold text-white">Ofertas</h3>
+                    <a href="#" class="d-block my-4">Promociones</a>
+                    <a href="#" class="d-block my-4">Recomendaciones</a>
+                    <a href="#" class="d-block my-4">Acerca de</a>
+                </div><!--/col-->
+                <div class="col-md-3">
+                    <h3 class="h3 fw-bold text-white">Legal</h3>
+                    <a href="#" class="d-block my-4">Terminos y condiciones</a>
+                    <a href="#" class="d-block my-4">Politica de Privacidad</a>
+                    <div class="download-app">
+                        <p class="muted">Descarga Nuestra App</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#"><img src="img/btn-appStore.png" alt="Descargar desde el App Store"></a></li>
+                            <li class="list-inline-item"><a href="#"><img src="img/btn-googlePlay.png" alt="Descargar desde Google Play Store"></a></li>
+                        </ul>
+                    </div><!--/download-app-->
+                </div><!--/col-->
+            </div><!--/row-->
+        </div><!--/container-->
+    </div><!--/links-->
+    <div class="copy py-4 fw-bolder bg-dark">
+        <div class="container text-center fs-6">
+            <a href="mailto:contactus@ohfoodie.com" class="text-white">contactus@ohfoodie.com</a> | Carrera 53 # 70-72, Oficina 4. Barranquilla, Colombia
+        </div><!--/container-->
+    </div><!--/copy-->
+</footer>
+    <!--  JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/FavIcon.png">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Listas | OH Foodie, Web App!</title>
+  </head>
+  <body>
+<header class="container py-3 mb-0 border-bottom">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+        <div class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <a href="index.html" class="navbar-brand">
+                <figure class="m-0">
+                    <img src="img/LogoOhFoodieHorizontal.svg" alt="">
+                </figure>
+            </a>
+            <div class="dropdown">
+                <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span class="icono"></span>  Baranquilla
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><h3><a class="dropdown-item" href="#">Abejorral</a></li>
+                  <li><h3><a class="dropdown-item" href="#">Barranquilla</a></li>
+                  <li><h3><a class="dropdown-item" href="#">Bogotá</a></li>
+                  <li><h3><a class="dropdown-item" href="#">Cartagena</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <ul class="nav col-12 col-md-auto my-3 my-md-0 justify-content-center mb-md-0">
+            <li><a href="restaurantes.html" class="nav-link h6 px-3 mb-0 link-dark"><span class="icono"><img src="img/icons/icon-restaurantes.svg" alt=""></span> Restaurantes</a></li>
+            <li><a href="listas.html" class="nav-link h6 px-3 mb-0 link-dark"><span class="icono"><img src="img/icons/icon-listas.svg" alt=""></span> Listas</a></li>
+            <li class="active"><a href="#" class="nav-link h6 px-3 mb-0 link-dark"><span class="icono"><img src="img/icons/icon-exp.svg" alt=""></span> Experiencias</a></li>
+        </ul>
+    
+        <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Ingresa <i class="bi bi-arrow-right-short"></i></button>
+            <button type="button" class="btn btn-primary">Registrate</button>
+        </div>
+    </div>
+</header>
+<main>
+<section class="text-center jumbotron bg-experiencias">
+    <div class="container py-5">
+        <div class="row py-lg-5">
+            <div class="col-md-10 mx-auto">
+                <h1 class="fw-bold text-white">No pierdas una buena experiencia</h1>
+                <div>
+                    <div class="input-group input-group-lg">
+                        <input type="search" class="form-control rounded ms-auto me-1" placeholder="Busca tu restaurante, plato o comida favorita" aria-label="Search" aria-describedby="search-addon"style="max-width:640px;" />
+                        <button type="button" class="btn btn-primary rounded ms-1 me-auto"> Buscar </button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</section><!-- Hero-->
+<!--///-->
+<section class="banner mt-4">
+    <div class="container mt-3 text-dark ">
+        <div class="jumbotron banner_promotion text-center rounded p-5">
+            <p class="col-md-8 offset-md-2 px-md-5 py-md-5 h1 fw-bold">20% DE DESCUENTO EN EXPERIENCIAS DE COMIDA VEGANA</p>
+        </div>
+    </div>
+</section><!-- promotion -->
+<!--///-->
+<section class="experiencias mt-5 mb-1 py-3">
+    <div class="container">
+        <div class="heading d-flex justify-content-between border-bottom">
+            <h3 class="fw-bold">Experiencias Destacadas</h3>
+            <a href="#" class="link fw-bold">Ver todas</a>
+        </div>
+        <div class="exp-cards mt-5 mb-2 px-0 container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" >
+                        <img src="img/exp-cena-romantica.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">50 mejores lugares de Barranquilla para una cena romántica</h5>
+                            <div class="d-flex hstack g-2 justify-content-between">
+                                <a href="#" class="btn btn-primary lh-lg">Ver esta lista </a>
+                                <div class="reviews d-flex my-2">
+                                    <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                        <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                    </div> <!--/foodie-->
+                                    <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                        <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                    </div> <!--/foodie-pro-->
+                                </div><!--/Reviews-->
+                            </div><!--/hstack-->
+                        </div><!--/card-body-->
+                      </div><!--/card-->
+                </div><!--/col-->
+                <div class="col-md-4">
+                    <div class="card" >
+                        <img src="img/exp-desayunos-bquilla.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Los 100 mejores desayunos de Barranquilla</h5>
+                            <div class="d-flex hstack g-2 justify-content-between">
+                                <a href="#" class="btn btn-primary lh-lg">Ver esta lista </a>
+                                <div class="reviews d-flex my-2">
+                                    <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                        <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                    </div> <!--/foodie-->
+                                    <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                        <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                    </div> <!--/foodie-pro-->
+                                </div><!--/Reviews-->
+                            </div><!--/hstack-->
+                        </div><!--/card-body-->
+                      </div><!--/card-->
+                </div><!--/col-->
+                <div class="col-md-4">
+                    <div class="card" >
+                        <img src="img/exp-comida-internacional.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">25 mejores sitios de comida internacional</h5>
+                            <div class="d-flex hstack g-2 justify-content-between">
+                                <a href="#" class="btn btn-primary lh-lg">Ver esta lista </a>
+                                <div class="reviews d-flex my-2">
+                                    <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                        <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                    </div> <!--/foodie-->
+                                    <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                        <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                    </div> <!--/foodie-pro-->
+                                </div><!--/Reviews-->
+                            </div><!--/hstack-->
+                        </div><!--/card-body-->
+                      </div><!--/card-->
+                </div><!--/col-->
+            </div>
+        </div>
+    </div><!--/contenedor-->
+</section><!--/experiencias-->
+<!--///-->
+<section class="bg-light mt-1 py-5">
+    <div class="container">
+        <div class="heading d-flex justify-content-between border-bottom">
+            <h3 class="fw-bold">Restaurantes populares en <span>Barranquilla</span></h3>
+            <a href="#" class="link fw-bold">Ver todos</a>
+        </div>
+        <div class="product-cards mt-5 mb-2 px-0 container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/la-brasserie-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">La Brasserie</h2>
+                            <p class="card-subtitle">Mediterránea</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 44#74 - 02</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar <i class="bi bi-arrow-right-short"></i></a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/brisket-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">Brisket casa de asados</h2>
+                            <p class="card-subtitle">Steakhouse</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Calle 75 #60 - 57</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar <i class="bi bi-arrow-right-short"></i></a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/turcos-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">Turcos Cocina Arabe</h2>
+                            <p class="card-subtitle">Arabe</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Calle 84 #55 - 54 Local 3</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$<span>$$</span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar <i class="bi bi-arrow-right-short"></i></a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top" src="img/piazzetta-img-card.png" alt="Miniatura Restaurante">                            
+                        <div class="card-body">
+                            <h2 class="card-title">La Piazzetta</h2>
+                            <p class="card-subtitle">Italiana</p>
+                            <div class="reviews d-flex my-2">
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Ranking">
+                                    <span class="badge foodie"><figure><img src="img/icons/foodie-icon.svg" alt=""></figure></span> 4.5 
+                                </div> <!--/foodie-->
+                                <div class="label text-dark"  data-bs-toggle="tooltip" data-bs-placement="top" title="Foodie Pro Ranking">
+                                    <span class="badge foodie-pro"><figure><img src="img/icons/foodpro-icon.svg" alt=""></figure></span> 4.2 
+                                </div> <!--/foodie-pro-->
+                            </div><!--/Reviews-->
+                            <div class="card-tooltip">
+                                <div class="info d-flex align-items-baseline justify-content-between">
+                                    <div class="ubicacion"><img src="img/icons/icon-map-marker.svg" alt="icon"> Cra 64b # 84 -131</div><!--/ubicacion-->
+                                    <div class="precios"><img src="img/icons/icon-money.svg" alt="icon"> $$$$<span></span></div>
+                                </div><!--/info-->
+                                <div class="horario"><img src="img/icons/icon-time.svg" alt="icon"> Ver Horarios</div>
+                            </div><!--/info-->
+                                <a href="#" class="btn btn-primary">Reservar <i class="bi bi-arrow-right-short"></i></a>
+                        </div><!--/card-body-->
+                    </div><!--/Product Card -->
+                </div><!--/col--> 
+            </div><!--/row-->
+        </div><!--/products-cards-container -->
+    </div><!--/container-->
+</section><!--/restaurants-->
+<section class="add py-5" style="background: #e6e8ed;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h2 class="fs-1">¿Tienes un restaurante único para dar a conocer?</h2>
+                <h5>Ingresa tu restaurante a nuestra plataforma y gana reconocimiento. Solo tienes que ingresar los datos y esperar nuestra respuesta.</h5>
+                <a href="#" class="btn btn-outline-primary btn-lg my-3">Descubre cómo aquí <i class="bi bi-arrow-right"></i></a>
+            </div><!--/col-->
+            <div class="col-md-4">
+                <figure class="figure text-center mx-auto w-100">
+                    <img src="img/restaurante.png" class="figure-img img-fluid rounded-circle" alt="Recomienda tu restaurante">
+                    
+                  </figure>
+            </div><!--/col-->
+        </div><!--/row-->
+    </div><!--/container-->
+</section><!--/add-->
+<!--///-->
+</main>
+<footer>
+    <div class="quick-links py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <figure>
+                        <img src="img/LogoOhFoodieVertical.svg" alt="">
+                    </figure>
+                </div><!--/col-->
+                <div class="col-md-3">
+                    <h3 class="h3 fw-bold text-white">Servicios</h3>
+                    <a href="restaurantes.html" class="d-block my-4">Restaurantes</a>
+                    <a href="listas.html" class="d-block my-4">Listas</a>
+                    <a href="#" class="d-block my-4">Experiencias</a>
+                </div><!--/col-->
+                <div class="col-md-3">
+                    <h3 class="h3 fw-bold text-white">Ofertas</h3>
+                    <a href="#" class="d-block my-4">Promociones</a>
+                    <a href="#" class="d-block my-4">Recomendaciones</a>
+                    <a href="#" class="d-block my-4">Acerca de</a>
+                </div><!--/col-->
+                <div class="col-md-3">
+                    <h3 class="h3 fw-bold text-white">Legal</h3>
+                    <a href="#" class="d-block my-4">Terminos y condiciones</a>
+                    <a href="#" class="d-block my-4">Politica de Privacidad</a>
+                    <div class="download-app">
+                        <p class="muted">Descarga Nuestra App</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#"><img src="img/btn-appStore.png" alt="Descargar desde el App Store"></a></li>
+                            <li class="list-inline-item"><a href="#"><img src="img/btn-googlePlay.png" alt="Descargar desde Google Play Store"></a></li>
+                        </ul>
+                    </div><!--/download-app-->
+                </div><!--/col-->
+            </div><!--/row-->
+        </div><!--/container-->
+    </div><!--/links-->
+    <div class="copy py-4 fw-bolder bg-dark">
+        <div class="container text-center fs-6">
+            <a href="mailto:contactus@ohfoodie.com" class="text-white">contactus@ohfoodie.com</a> | Carrera 53 # 70-72, Oficina 4. Barranquilla, Colombia
+        </div><!--/container-->
+    </div><!--/copy-->
+</footer>
+    <!--  JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

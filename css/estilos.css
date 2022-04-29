@@ -154,14 +154,22 @@ nav{
 .card-header{
     background-color: transparent;
 }
+.card-title {
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+}
 .card-tooltip{
     margin: 8px auto;
+}
+.card-tooltip .info{
+    direction: ltr;
+    margin-top: 1rem;
 }
 .card-tooltip .ubicacion{
     font-size: 14px;
     vertical-align: middle;
     text-align: initial;
-    line-height: 1rem;
+    min-height: 3rem;
 }
 .card-tooltip .precios{
     font-size: 1rem;
@@ -170,7 +178,7 @@ nav{
 }
 .card-tooltip .precios span{color: #666;}
 .card-tooltip .horario {
-    margin: 8px auto;
+    margin-bottom:1.52rem;
     font-weight: bold;
     color: var(--gris-oscuro);
 }

@@ -45,10 +45,105 @@
         </ul>
     
         <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2">Ingresa <i class="bi bi-arrow-right-short"></i></button>
+            <!-- trigger Log In modal -->
+            <button type="button" class="btn btn-outline-primary me-2"  data-bs-toggle="modal" data-bs-target="#logInModal">Ingresa <i class="bi bi-arrow-right-short"></i></button>
             <button type="button" class="btn btn-primary">Registrate</button>
         </div>
     </div>
+    <!-- LogIn Modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content"> 
+                <div class="modal-body">
+                    
+                    <div id="first">
+                        <div class="myform form ">
+                             <div class="logo mb-3">
+                                 <div class="col-md-12 text-center">
+                                    <img src="img/LogoOhFoodieHorizontal.svg" alt="">
+                                 </div>
+                            </div>
+                           <form action="" method="post" name="login" novalidate="novalidate">
+                                   <div class="form-group mb-3">
+                                      <label for="exampleInputEmail1">Direccion de correo electronico</label>
+                                      <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                   </div>
+                                   <div class="form-group mb-3">
+                                      <label for="exampleInputEmail1">Contraseña</label>
+                                      <input type="password" name="password" id="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                                   </div>
+                                   <div class="form-group mb-3">
+                                      <p class="text-center">Al registrarte aceptas nuestros <a href="#">Términos de uso</a></p>
+                                   </div>
+                                   <div class="col-12 text-center ">
+                                      <button type="submit" class=" btn w-100 btn-block btn-primary ">Acceso</button>
+                                   </div>
+                                   <div class="row">
+
+                                       <div class="col-6 my-3">
+                                          <p class="text-center">
+                                             <a href="javascript:void();" class="btn w-100 btn-block btn-outline-secondary btn btn-block rounded"><i class="bi bi-google"></i> Inicia con Google</a>
+                                          </p>
+                                        </div>
+                                        <div class="col-6 my-3">
+                                            <p class="text-center">
+                                            <a href="javascript:void();" class="btn w-100 btn-block btn-dark btn btn-block rounded text-white"><i class="bi bi-facebook"></i> Inicia con Facebook</a>
+                                            </p>
+                                        </div>
+                                   </div>
+                                   <div class="form-group">
+                                      <p class="text-center">No tienes una cuenta?<a href="#" id="signup" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal"> Crea una gratis</a></p>
+                                   </div>
+                                </form>
+                        </div>
+                    </div>
+                </div><!--/modal-body-->
+            </div>
+            </div>
+        </div>
+        <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <div class="myform form ">
+                        <div class="logo mb-3">
+                           <div class="col-md-12 text-center">
+                              <h3>Registrate</h3>
+                           </div>
+                        </div>
+                        <form action="#" name="registration" novalidate="novalidate">
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">First Name</label>
+                              <input type="text" name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Last Name</label>
+                              <input type="text" name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Password</label>
+                              <input type="password" name="password" id="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                           </div>
+                           <div class="col-md-12 text-center my-3">
+                              <button type="submit" class=" btn btn-block w-100 btn-primary">Comience Gratis</button>
+                           </div>
+                           <div class="col-md-12 ">
+                              <div class="form-group">
+                                 <p class="text-center"><a href="#" id="signin" data-bs-target="#logInModal" data-bs-toggle="modal" data-bs-dismiss="modal">¿Ya tienes una cuenta?</a></p>
+                              </div>
+                           </div>
+                        </form>
+                    </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+    <!--/logIn Modal-->
 </header>
 <main>
 <section class="py-5 text-center jumbotron bg-hero">

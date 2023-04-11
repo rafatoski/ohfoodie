@@ -183,16 +183,16 @@ nav{
     color: var(--gris-oscuro);
 }
 .lists-cards .card.bg-dark:after{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
     bottom: 0;
-    top: 0;
-    width: 100%;
-    display: inline-block;
     background-color: #11111185;
+    content: '';
+    display: inline-block;
     height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    top: 0;
     z-index: 2;
 }
 .lists-cards .card-img-overlay {
